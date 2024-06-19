@@ -19,8 +19,10 @@ function registrarLogin() {
     window.location.href = "index.html"
 }
 function sairConta() {
-    if (confirm("tem certeza") == true)
+    if (confirm("tem certeza") == true){
         window.location.href = "index.html"
+        localStorage.clear()
+    }
 }
 function login() {
     let email = document.getElementById("email2").value
